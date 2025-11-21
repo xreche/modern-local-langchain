@@ -88,7 +88,8 @@ modern-local-langchain/
 │   ├── 02_local_rag.ipynb
 │   ├── 02_simple_rag.ipynb
 │   ├── 03_conversational_memory.ipynb
-│   └── 04_local_agents.ipynb
+│   ├── 04_agent_concepts.ipynb
+│   └── 05_agent_implementation.ipynb
 ├── src/                     # Código fuente del proyecto
 │   ├── __init__.py
 │   ├── config.py           # Configuraciones globales
@@ -138,8 +139,17 @@ Verificación del entorno de desarrollo. Confirma que todas las dependencias est
 - Simulación de conversaciones con seguimiento
 - Múltiples sesiones independientes
 
-### 04_local_agents.ipynb
-**Agentes Locales: Razonamiento con Herramientas**
+### 04_agent_concepts.ipynb
+**Fundamentos de Agentes: Teoría y Mecánica Interna**
+- El cambio de paradigma: Chain (DAG) vs. Agent (Loop)
+- Arquitectura cognitiva: Patrón ReAct (Reason + Act)
+- El componente invisible: The Scratchpad
+- Seguridad y control: Guardrails (Max Iterations, Tool Whitelisting, Parser Check)
+- Simulación manual: Construcción de un agente desde cero sin abstracciones
+- El "Ah-ha!" moment: Ver que un agente es solo un bucle while con parsing
+
+### 05_agent_implementation.ipynb
+**Agentes Locales: Implementación con LangChain**
 - Definición de Tools con decorador `@tool`
 - Importancia de los docstrings
 - Binding de tools al modelo
